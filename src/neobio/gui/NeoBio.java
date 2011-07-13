@@ -70,7 +70,7 @@ public class NeoBio extends JFrame
         setDefaultCloseOperation (WindowConstants.DISPOSE_ON_CLOSE);
         initComponents();
 
-        show();
+        setVisible(true);
 
 		// always open pairwise alignment internal frame
         pairwiseAlignment();
@@ -178,7 +178,7 @@ public class NeoBio extends JFrame
 
     private void aboutMenuItemActionPerformed (ActionEvent e)
     {
-        (new AboutDialog(this)).show();
+        (new AboutDialog(this)).setVisible(true);
     }
 
     private void exitMenuItemActionPerformed (ActionEvent e)
